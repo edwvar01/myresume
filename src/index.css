@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-molten-lava: #780000;
+  --color-flag-red: #C1121F;
+  --color-papaya-whip: #FDF0D5;
+  --color-deep-space-blue: #003049;
+  --color-steel-blue: #669BBC;
+}
+
+body {
+  @apply bg-deep-space-blue text-papaya-whip overflow-x-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-deep-space-blue;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-steel-blue/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-steel-blue;
+}
